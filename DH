@@ -4352,7 +4352,7 @@ end)
 
 Library:SelectPage(Library.pages[1], true)
 
-Library:Notify("Krypt", "We have started! Thank you for using our service.")
+Library:Notify("NOTL", "We have started! Thank you for using our service.")
 
 local bind = Instance.new("BindableFunction")
 
@@ -4378,14 +4378,14 @@ function bind.OnInvoke(response)
 		end
 	else
 		game.StarterGui:SetCore("SendNotification", {
-			Title = "Krypt",
+			Title = "NOTL",
 			Text = "If you get banned, its not on us!",
 			Duration = 6.9
 		})
 	end
 end
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Krypt",
+	Title = "NOTL",
 	Text = "Morph yourself, wont affect your game. Prevents global bans.",
 	Duration = 3.4028235e+38,
 	Callback = bind,
